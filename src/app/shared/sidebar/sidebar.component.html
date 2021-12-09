@@ -48,6 +48,8 @@
               *ngFor="let submenuItem of item.submenu">
               <a 
                 [routerLink]="submenuItem.url"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{ 'exact': true }"
                 > {{ submenuItem.titulo }} </a>
             </li>
           </ul>
